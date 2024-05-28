@@ -3,5 +3,4 @@ class MainAssets {
 
   static const path = "assets/images";
   static const logo = "$path/logo.png";
-
 }
