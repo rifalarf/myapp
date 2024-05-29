@@ -30,7 +30,20 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
-          children: [Image.asset(MainAssets.logo), const Text('Halo')],
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              MainAssets.logo,
+              width: MediaQuery.of(context).size.width / 2,
+            ),
+            const Text(
+              'Kaseer',
+              style: TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
+            )
+          ],
         ),
       ),
     );
